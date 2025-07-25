@@ -1,5 +1,9 @@
 # esp-idf-lib/mhz19b
 
+[![Build examples](https://github.com/esp-idf-lib/mhz19b/actions/workflows//build.yml/badge.svg)](https://github.com/esp-idf-lib/mhz19b/actions/workflows//build.yml)
+[![Build docs](https://github.com/esp-idf-lib/mhz19b/actions/workflows//build-docs.yml/badge.svg)](https://github.com/esp-idf-lib/mhz19b/actions/workflows//build-docs.yml)
+[![Validation](https://github.com/esp-idf-lib/mhz19b/actions/workflows//validate-component.yml/badge.svg)](https://github.com/esp-idf-lib/mhz19b/actions/workflows//validate-component.yml)
+
 Driver for MH-Z19B NDIR CO₂ sensor.
 
 * [Documentation](https://esp-idf-lib.github.io/mhz19b/)
@@ -11,7 +15,7 @@ Driver for MH-Z19B NDIR CO₂ sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency esp-idf-lib/mhz19b^1.1.0
+idf.py add-dependency esp-idf-lib/mhz19b
 ```
 
 ## Support
