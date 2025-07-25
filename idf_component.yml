@@ -17,7 +17,6 @@ dependencies:
   esp-idf-lib/esp_idf_lib_helpers:
     version: "*"
 maintainers:
-  -
   - David Douard (@douardda) <david.douard@sdfa3.org>
 url: https://github.com/esp-idf-lib/core
 repository: https://github.com/esp-idf-lib/mhz19b
