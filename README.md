@@ -11,7 +11,7 @@ Driver for MH-Z19B NDIR CO₂ sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/mhz19b^1.1.0
+idf.py add-dependency esp-idf-lib/mhz19b^1.1.0
 ```
 
 ## Support
