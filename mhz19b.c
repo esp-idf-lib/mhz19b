@@ -54,7 +54,8 @@ esp_err_t mhz19b_init(mhz19b_dev_t *dev, uart_port_t uart_port, gpio_num_t tx_gp
 {
     CHECK_ARG(dev);
 
-    uart_config_t uart_config = {
+    uart_config_t uart_config =
+    {
         .baud_rate = 9600,
         .data_bits = UART_DATA_8_BITS,
         .parity    = UART_PARITY_DISABLE,
@@ -138,7 +139,8 @@ bool mhz19b_is_ready(mhz19b_dev_t *dev)
     if (!dev) return false;
 
     // Minimum CO2 read interval (Built-in LED flashes)
-    if ((esp_timer_get_time() - dev->last_ts) > MHZ19B_READ_INTERVAL_MS) {
+    if ((esp_timer_get_time() - dev->last_ts) > MHZ19B_READ_INTERVAL_MS)
+    {
         return true;
     }
 
@@ -171,7 +173,8 @@ esp_err_t mhz19b_get_version(mhz19b_dev_t *dev, char *version)
     CHECK(mhz19b_send_command(dev, MHZ19B_CMD_GET_VERSION, 0, 0, 0, 0, 0));
 
     // Copy 4 ASCII characters to version array like "0443"
-    for (uint8_t i = 0; i < 4; i++) {
+    for (uint8_t i = 0; i < 4; i++)
+    {
         // Version in response Bytes 2..5
         version[i] = dev->buf[i + 2];
     }

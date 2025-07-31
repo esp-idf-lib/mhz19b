@@ -93,7 +93,8 @@ typedef struct
 /**
  * @brief PPM range
  */
-typedef enum {
+typedef enum
+{
     MHZ19B_RANGE_2000 = 2000,            ///< 2000 ppm
     MHZ19B_RANGE_5000 = 5000,            ///< 5000 ppm (Default)
 } mhz19b_range_t;
@@ -227,7 +228,7 @@ esp_err_t mhz19b_set_auto_calibration(mhz19b_dev_t *dev, bool calibration_on);
  * @return ESP_OK on success
  */
 esp_err_t mhz19b_get_auto_calibration(
-	mhz19b_dev_t *dev, bool *calibration_on); // (NOT DOCUMENTED)
+    mhz19b_dev_t *dev, bool *calibration_on); // (NOT DOCUMENTED)
 
 /**
  * @brief Start Zero Point Calibration manually at 400ppm
@@ -259,8 +260,8 @@ esp_err_t mhz19b_start_calibration(mhz19b_dev_t *dev);
  * @param b7 Byte 7 (default 0)
  */
 esp_err_t mhz19b_send_command(mhz19b_dev_t *dev, uint8_t cmd,
-							  uint8_t b3, uint8_t b4, uint8_t b5,
-							  uint8_t b6, uint8_t b7);
+                              uint8_t b3, uint8_t b4, uint8_t b5,
+                              uint8_t b6, uint8_t b7);
 
 /**
  * @brief Calculate CRC on 8 data Bytes buffer
