@@ -20,5 +20,4 @@ defaults for each supported target).
 | `CONFIG_EXAMPLE_UART_TX` | GPIO number for `TX` | "18" for `esp32c3`, "12" for `esp32`, `esp32s2`, and `esp32s3` |
 | `CONFIG_EXAMPLE_UART_RX` | GPIO number for `RX` | "19" for `esp32c3`, "13" for `esp32`, `esp32s2`, and `esp32s3` |
 
-Change the defaults GPIO numbers under `Example configuration` by `make
-menuconfig`.
+Change the defaults GPIO numbers under `Example configuration` with `idf.py menuconfig`.
