@@ -1,7 +1,7 @@
 ---
 name: mhz19b
 description: Driver for MH-Z19B NDIR CO₂ sensor
-version: 1.2.0
+version: 1.2.1
 groups:
   - air-quality
   - gas
