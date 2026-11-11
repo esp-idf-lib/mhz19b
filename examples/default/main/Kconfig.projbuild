@@ -5,6 +5,7 @@ menu "Example configuration"
         default 4 if IDF_TARGET_ESP32H2
         default 4 if IDF_TARGET_ESP32P4
         default 12 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 12
         help
             GPIO number for UART TX line.
 
@@ -14,6 +15,7 @@ menu "Example configuration"
         default 5 if IDF_TARGET_ESP32H2
         default 5 if IDF_TARGET_ESP32P4
         default 13 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2 || IDF_TARGET_ESP32S3
+        default 13
         help
             GPIO number for UART RX line.
 endmenu
